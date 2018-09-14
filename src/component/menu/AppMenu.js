@@ -6,10 +6,14 @@ import PermIdentity from '@material-ui/icons/PermIdentity';
 import Web from '@material-ui/icons/Web';
 import InsertDriveFile from '@material-ui/icons/InsertDriveFile';
 import Email from '@material-ui/icons/Email';
-import TrendingUp from '@material-ui/icons/TrendingUp';
 import ListItemLink from "./ListItemLink";
+import { loadCSS } from 'fg-loadcss/src/loadCSS';
+import Icon from "@material-ui/core/es/Icon/Icon";
+import classNames from 'classnames';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const styles = theme => ({});
+const styles = theme => ({
+});
 
 class AppMenu extends React.Component {
 
@@ -20,7 +24,7 @@ class AppMenu extends React.Component {
             <div>
                 <List>
                     <ListItemLink icon={<PermIdentity/>} primary={"About me"} onClick={onAboutMeClick}/>
-                    <ListItemLink icon={<TrendingUp/>} primary={"Skills"} onClick={onSkillsClick}/>
+                    <ListItemLink icon={<FontAwesomeIcon icon="code"/>} primary={"Skills"} onClick={onSkillsClick}/>
                     <ListItemLink icon={<Web/>} primary={"Portfolio"} onClick={onPortfolioClick}/>
                     <ListItemLink icon={<InsertDriveFile/>} primary={"Resume"} onClick={onResumeClick}/>
                     <ListItemLink icon={<Email/>} primary={"Contact"} onClick={onContactClick}/>

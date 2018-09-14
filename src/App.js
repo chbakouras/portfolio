@@ -14,6 +14,9 @@ import Contact from "./component/contact/Contact";
 import Skills from "./component/skills/Skills";
 import Portfolio from "./component/portfolio/Portfolio";
 import Resume from "./component/resume/Resume";
+import FontAwesomeIconRegistry from "./service/FontAwesomeIconRegistry";
+
+FontAwesomeIconRegistry.register();
 
 const theme = createMuiTheme({
     drawerWidth: 200,
