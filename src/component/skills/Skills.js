@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import withStyles from "@material-ui/core/es/styles/withStyles";
+import SectionHeader from "../layout/SectionHeader";
 
 const styles = theme => ({});
 
@@ -9,7 +10,7 @@ class Skills extends React.Component {
     render() {
         return (
             <div>
-                skills
+                <SectionHeader headerText={'Skills'}/>
             </div>
         );
     }
