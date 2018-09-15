@@ -7,13 +7,9 @@ import Web from '@material-ui/icons/Web';
 import InsertDriveFile from '@material-ui/icons/InsertDriveFile';
 import Email from '@material-ui/icons/Email';
 import ListItemLink from "./ListItemLink";
-import { loadCSS } from 'fg-loadcss/src/loadCSS';
-import Icon from "@material-ui/core/es/Icon/Icon";
-import classNames from 'classnames';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
-const styles = theme => ({
-});
+const styles = theme => ({});
 
 class AppMenu extends React.Component {
 

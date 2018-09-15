@@ -4,9 +4,13 @@ import {withStyles} from "@material-ui/core/styles/index";
 
 const styles = theme => ({
     headerContainer: {
-        padding: '10px',
+        padding: '6px 30px',
+        margin: '10px auto',
         border: '1px solid #e4e4e4',
-    }
+    },
+    header: {
+        fontSize: '20px',
+    },
 });
 
 class SectionHeader extends React.Component {
@@ -15,7 +19,7 @@ class SectionHeader extends React.Component {
         const {classes, headerText} = this.props;
         return (
             <div className={classes.headerContainer}>
-                <h3>{headerText}</h3>
+                <h3 className={classes.header}>{headerText}</h3>
             </div>
         );
     }

@@ -1,19 +1,18 @@
 import 'typeface-roboto'
 import React, {Component} from 'react';
-import './App.css';
 import PropTypes from 'prop-types';
 import createMuiTheme from "@material-ui/core/es/styles/createMuiTheme";
 import MuiThemeProvider from "@material-ui/core/es/styles/MuiThemeProvider";
 import {withStyles} from "@material-ui/core/styles/index";
 import AppLayout from "./component/layout/AppLayout";
-import Profile from "./component/profile/Profile";
+import Profile from "./component/menu/Profile";
 import AppMenu from "./component/menu/AppMenu";
-import AboutMe from "./component/about-me/AboutMe";
+import AboutMe from "./component/section/AboutMe";
 import scrollToComponent from 'react-scroll-to-component';
-import Contact from "./component/contact/Contact";
-import Skills from "./component/skills/Skills";
-import Portfolio from "./component/portfolio/Portfolio";
-import Resume from "./component/resume/Resume";
+import Contact from "./component/section/Contact";
+import Skills from "./component/section/Skills";
+import Portfolio from "./component/section/Portfolio";
+import Resume from "./component/section/Resume";
 import FontAwesomeIconRegistry from "./service/FontAwesomeIconRegistry";
 
 FontAwesomeIconRegistry.register();

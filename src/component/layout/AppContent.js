@@ -4,7 +4,9 @@ import {withStyles} from "@material-ui/core/styles/index";
 
 
 const styles = theme => ({
-    toolbar: theme.mixins.toolbar,
+    toolbar: {
+        [theme.breakpoints.down('sm')]: {...theme.mixins.toolbar}
+    },
     content: {
         flexGrow: 1,
         backgroundColor: theme.palette.background.default,

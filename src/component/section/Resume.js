@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from 'prop-types';
 import withStyles from "@material-ui/core/es/styles/withStyles";
 import SectionHeader from "../layout/SectionHeader";
+import Section from "../layout/Section";
+import SectionContent from "../layout/SectionContent";
 
 const styles = theme => ({});
 
@@ -9,9 +11,11 @@ class Resume extends React.Component {
 
     render() {
         return (
-            <div>
+            <Section>
                 <SectionHeader headerText={'Resume'}/>
-            </div>
+                <SectionContent>
+                </SectionContent>
+            </Section>
         );
     }
 }
