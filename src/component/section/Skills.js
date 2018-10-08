@@ -4,6 +4,7 @@ import withStyles from "@material-ui/core/es/styles/withStyles";
 import SectionHeader from "../layout/SectionHeader";
 import Section from "../layout/Section";
 import SectionContent from "../layout/SectionContent";
+import SkillBadge from "../common/SkillBadge";
 
 const styles = theme => ({});
 
@@ -14,6 +15,7 @@ class Skills extends React.Component {
             <Section>
                 <SectionHeader headerText={'Skills'}/>
                 <SectionContent>
+                    <SkillBadge skill={'Javascript'} imageSrc={'/img/skills/javascript/javascript.png'} />
                 </SectionContent>
             </Section>
         );
