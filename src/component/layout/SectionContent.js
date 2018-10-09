@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import {withStyles} from "@material-ui/core/styles/index";
 
 const styles = theme => ({
-    sectionContent: {}
+    sectionContent: {
+        padding: theme.spacing.unit * 3,
+    }
 });
 
 class SectionContent extends React.Component {

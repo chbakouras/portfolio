@@ -19,6 +19,12 @@ FontAwesomeIconRegistry.register();
 
 const theme = createMuiTheme({
     drawerWidth: 200,
+    primaryColor:  '#ffffff',
+    darkColor: '#005005',
+    lightColor: '#60ad5e',
+    primaryTextColor:  '#000000',
+    darkTextColor: '#000000',
+    lightTextColor: '#000000',
 });
 
 class App extends Component {
