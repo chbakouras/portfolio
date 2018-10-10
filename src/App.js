@@ -41,7 +41,7 @@ class App extends Component {
                 <Profile
                     firstName={'Chrisostomos'}
                     lastName={'Bakouras'}
-                    profileImageSrc={'/img/chbakouras.jpeg'}
+                    profileImageSrc={'/img/chbakouras.jpg'}
                     subheading={'Full stack developer'}/>
                 <AppMenu
                     onAboutMeClick={() => scrollToComponent(this.aboutMeSection, scrollConfig)}

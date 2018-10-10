@@ -9,13 +9,16 @@ import CardContent from "@material-ui/core/CardContent/CardContent";
 
 const styles = theme => ({
     card: {
-        maxWidth: 150,
+        maxWidth: 160,
+        padding: '5px 5px 0 5px',
     },
     media: {
-        objectFit: 'cover',
+        objectFit: 'contain',
+        height: 160,
     },
     cardContent: {
-        textAlign: 'center'
+        textAlign: 'center',
+        height: 35,
     },
 });
 
@@ -24,8 +27,8 @@ class SkillBadge extends React.Component {
     render() {
         const {classes, imageSrc, skill} = this.props;
         return (
-            <Card className={classes.card}>
-                <CardActionArea>
+            <CardActionArea>
+                <Card className={classes.card}>
                     <CardMedia
                         component="img"
                         alt={skill}
@@ -38,8 +41,8 @@ class SkillBadge extends React.Component {
                             {skill}
                         </Typography>
                     </CardContent>
-                </CardActionArea>
-            </Card>
+                </Card>
+            </CardActionArea>
         );
     }
 }
