@@ -18,6 +18,9 @@ import FontAwesomeIconRegistry from "./service/FontAwesomeIconRegistry";
 FontAwesomeIconRegistry.register();
 
 const theme = createMuiTheme({
+    typography: {
+        useNextVariants: true,
+    },
     drawerWidth: 200,
     primaryColor:  '#ffffff',
     darkColor: '#005005',

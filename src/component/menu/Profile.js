@@ -35,13 +35,13 @@ class Profile extends React.Component {
                     />
                 </Grid>
                 <Grid item xs={12} className={classes.center}>
-                    <Typography variant={'title'}>
+                    <Typography variant='h6'>
                         {firstName}
                     </Typography>
-                    <Typography variant={'title'}>
+                    <Typography variant='h6'>
                         {lastName}
                     </Typography>
-                    <Typography variant={'subheading'}>
+                    <Typography variant='subtitle1'>
                         {subheading ? subheading : ''}
                     </Typography>
                 </Grid>

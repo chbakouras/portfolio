@@ -9,35 +9,41 @@ import CardContent from "@material-ui/core/CardContent/CardContent";
 
 const styles = theme => ({
     card: {
-        maxWidth: 160,
         padding: '5px 5px 0 5px',
     },
     media: {
         objectFit: 'contain',
-        height: 160,
     },
     cardContent: {
         textAlign: 'center',
-        height: 35,
+        height: 60,
+        padding: '0 !important',
+        display: 'flex',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        alignItems: 'center',
     },
 });
 
 class SkillBadge extends React.Component {
 
     render() {
-        const {classes, imageSrc, skill} = this.props;
+        const {classes, imageSrc, skill, size} = this.props;
+        const badgeSize = size || 90;
+
         return (
-            <CardActionArea>
-                <Card className={classes.card}>
+            <CardActionArea style={{maxWidth: badgeSize, margin: 'auto'}}>
+                <Card className={classes.card} style={{maxWidth: badgeSize}}>
                     <CardMedia
                         component="img"
                         alt={skill}
                         className={classes.media}
+                        style={{height: badgeSize}}
                         image={imageSrc}
                         title={skill}
                     />
                     <CardContent className={classes.cardContent}>
-                        <Typography gutterBottom variant="title" component="h2">
+                        <Typography component="h3" variant="subtitle1" gutterBottom>
                             {skill}
                         </Typography>
                     </CardContent>
@@ -52,6 +58,7 @@ SkillBadge.propTypes = {
     theme: PropTypes.object.isRequired,
     imageSrc: PropTypes.string.isRequired,
     skill: PropTypes.string.isRequired,
+    size: PropTypes.number,
 };
 
 export default withStyles(styles, {withTheme: true})(SkillBadge);
