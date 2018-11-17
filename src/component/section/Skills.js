@@ -27,10 +27,6 @@ class Skills extends React.Component {
         const {classes} = this.props;
         const languageBadgeSize = 110;
 
-        const middleBadgeMd = 6;
-        const middleBadgeLg = 3;
-        const middleBadgeXl = 2;
-
         return (
             <Section>
                 <SectionHeader headerText={'Skills'}/>
