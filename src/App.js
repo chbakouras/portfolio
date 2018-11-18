@@ -42,7 +42,7 @@ class App extends Component {
         const drawerContent =
             <div>
                 <Profile
-                    firstName={'Chrisostomos'}
+                    firstName={'Chrysostomos'}
                     lastName={'Bakouras'}
                     profileImageSrc={'/img/chbakouras.jpg'}
                     subheading={'Full stack developer'}/>
