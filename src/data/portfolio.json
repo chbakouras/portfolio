@@ -70,6 +70,20 @@
         "/img/projects/facebook-bot-building/links-statistics-1.png",
         "/img/projects/facebook-bot-building/links-statistics-2.png"
       ]
+    },
+    {
+      "name": "The Marathon Terra",
+      "description": "Company presentation site.",
+      "previewImgSrc": "/img/projects/the-marathon-terra/homepage.png",
+      "technologies": [
+        "PHP",
+        "Laravel",
+        "CSS"
+      ],
+      "images": [
+        "/img/projects/the-marathon-terra/home.png",
+        "/img/projects/the-marathon-terra/products.png"
+      ]
     }
   ]
 }
