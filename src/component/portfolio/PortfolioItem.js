@@ -10,6 +10,7 @@ const styles = theme => ({
     },
     image: {
         width: '100%',
+        margin: '20px 0'
     },
     imageWrapper: {
         margin: 20
@@ -40,7 +41,7 @@ class PortfolioItem extends React.Component {
                                      onClose={this.handleClose}>
                     <PortfolioItemPreview item={item}/>
                     <div className={classes.imageWrapper}>
-                        {item.images.map(src => <img src={src} className={classes.image}/>)}
+                        {item.images.map((src, i) => <img key={i} src={src} alt={`${item.name} ${i+1}`} className={classes.image}/>)}
                     </div>
                 </PortfolioItemDialog>
             </div>

@@ -4,7 +4,7 @@ import {withStyles} from "@material-ui/core/styles/index";
 
 const styles = theme => ({
     sectionContent: {
-        padding: theme.spacing.unit * 3,
+        padding: theme.spacing.unit * 1,
     }
 });
 

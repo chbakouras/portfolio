@@ -1,0 +1,47 @@
+{
+  "soloItems": [
+    {
+      "name": "E-Commerce Admin Panel",
+      "description": "Admin Panel is an e-commerce solution for managing orders, create reports, invoicing, digital marketing and composing landing pages for products. \n Build with microservice architecture. This project currently consist by several loosely coupled services such as a mailing service, a pdf service, and a service responsible for landing pages. \nSome of the keystones of the project: \nAbility to build landing pages for products, using a drag n drop UI. \nEvery product page is hosted as separate page to a different domain. \nEmail/Sms marketing. \nCourier delivery tracking.",
+      "previewImgSrc": "/img/projects/admin-panel/dashboard.png",
+      "technologies": [
+        "PHP",
+        "Laravel",
+        "Vanilla Javascript",
+        "jQuery",
+        "PostgreSQL"
+      ],
+      "images": [
+        "/img/projects/admin-panel/orders.png",
+        "/img/projects/admin-panel/invoices.png",
+        "/img/projects/admin-panel/send-sms.png",
+        "/img/projects/admin-panel/promotions.png",
+        "/img/projects/admin-panel/products.png",
+        "/img/projects/admin-panel/product.png",
+        "/img/projects/admin-panel/landing-pages.png"
+      ]
+    },
+    {
+      "name": "Web Scraper",
+      "description": "Web Scraper is a web monitoring solution. \nSome of the keystones of the project: \nAbility to setup a rule based scraping method per site. \nExtract articles from sites. \nCreate custom feeds. \nAggregate extracted web articles. \nFuzzy search web articles and store queries for later use. \nAuto publish articles to external wordpress sites or publish with a single click.",
+      "previewImgSrc": "/img/projects/web-scraper/posts.png",
+      "technologies": [
+        "PHP",
+        "Laravel",
+        "Vanilla Javascript",
+        "jQuery",
+        "PostgreSQL",
+        "ElasticSearch"
+      ],
+      "images": [
+        "/img/projects/web-scraper/posts.png",
+        "/img/projects/web-scraper/edit-post.png",
+        "/img/projects/web-scraper/routes.png",
+        "/img/projects/web-scraper/create-route.png",
+        "/img/projects/web-scraper/source-sites.png",
+        "/img/projects/web-scraper/source-site-edit-1.png",
+        "/img/projects/web-scraper/source-site-edit-2.png"
+      ]
+    }
+  ]
+}

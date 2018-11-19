@@ -14,6 +14,7 @@ const styles = theme => ({
         margin: '0 10px'
     },
     contentWrapper: {
+        width: '100%',
         padding: "15px",
         display: "flex",
         flexDirection: "column",
@@ -27,6 +28,9 @@ const styles = theme => ({
         maxWidth: 250,
         width: '100%',
         marginLeft: 'auto',
+        [theme.breakpoints.down('md')]: {
+            maxWidth: 'inherit',
+        },
     },
     chip: {
         margin: theme.spacing.unit,
@@ -53,8 +57,8 @@ class PortfolioItemPreview extends React.Component {
                             </Typography>
 
                             <div>
-                                {item.technologies.map(technology =>
-                                    <Chip label={technology} className={classes.chip}/>
+                                {item.technologies.map((technology, i) =>
+                                    <Chip key={i} label={technology} className={classes.chip}/>
                                 )}
                             </div>
 

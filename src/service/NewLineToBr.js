@@ -4,7 +4,7 @@ class NewLineToBr {
 
     static render(text) {
         return text.split('\n')
-            .reduce((arr, line) => arr.concat(line, <br/>), [])
+            .reduce((arr, line, index) => arr.concat(<span key={index}>{line}</span>, <br key={'key' + index} />), []);
     }
 }
 
