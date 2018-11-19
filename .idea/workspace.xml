@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3ace972-8731-4556-8e70-40b2c274a4bd" name="Default" comment="Swap position of Skills/Portfolio">
-      <change afterPath="$PROJECT_DIR$/public/img/projects/facebook-bot-building/auto-reply.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/projects/facebook-bot-building/broadcasts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/projects/facebook-bot-building/create-broadcast-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/projects/facebook-bot-building/create-broadcast-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/projects/facebook-bot-building/create-broadcast-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/projects/facebook-bot-building/create-broadcast-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/projects/facebook-bot-building/create-broadcast-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/projects/facebook-bot-building/customers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/projects/facebook-bot-building/flows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/projects/facebook-bot-building/keywords.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/projects/facebook-bot-building/links-statistics-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/projects/facebook-bot-building/links-statistics-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/projects/facebook-bot-building/persistent-menu.png" afterDir="false" />
+    <list default="true" id="d3ace972-8731-4556-8e70-40b2c274a4bd" name="Default" comment="Add Facebook Bot Building Platform">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/portfolio.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/portfolio.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -65,7 +50,7 @@
           <entry key="js" value="7907" />
           <entry key="json" value="707" />
           <entry key="md" value="18" />
-          <entry key="txt" value="267" />
+          <entry key="txt" value="301" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -73,7 +58,7 @@
           <entry key="JSON" value="707" />
           <entry key="JavaScript" value="7907" />
           <entry key="Markdown" value="18" />
-          <entry key="PLAIN_TEXT" value="267" />
+          <entry key="PLAIN_TEXT" value="301" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -88,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/portfolio.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="47" column="350" selection-start-line="47" selection-start-column="350" selection-end-line="47" selection-end-column="350" />
+            <state relative-caret-position="342">
+              <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -470,7 +455,7 @@
       <workItem from="1542222434619" duration="972000" />
       <workItem from="1542325276484" duration="48000" />
       <workItem from="1542464536111" duration="35319000" />
-      <workItem from="1542571824130" duration="16234000" />
+      <workItem from="1542571824130" duration="16693000" />
     </task>
     <task id="LOCAL-00001" summary="Integrate fontawesome icons&#10;Create icons registry">
       <created>1536887732274</created>
@@ -542,15 +527,21 @@
       <option name="project" value="LOCAL" />
       <updated>1542591640477</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add Facebook Bot Building Platform">
+      <created>1542593964551</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1542593964551</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155139000" />
+    <option name="totallyTimeSpent" value="155598000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16438356" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -611,7 +602,8 @@
     <MESSAGE value="Create portfolio item component" />
     <MESSAGE value="Finish 2 portfolio items" />
     <MESSAGE value="Swap position of Skills/Portfolio" />
-    <option name="LAST_COMMIT_MESSAGE" value="Swap position of Skills/Portfolio" />
+    <MESSAGE value="Add Facebook Bot Building Platform" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Facebook Bot Building Platform" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/App.css" />
@@ -924,8 +916,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/portfolio.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="47" column="350" selection-start-line="47" selection-start-column="350" selection-end-line="47" selection-end-column="350" />
+        <state relative-caret-position="342">
+          <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
         </state>
       </provider>
     </entry>
