@@ -60,11 +60,11 @@ class App extends Component {
                     <section ref={(section) => this.aboutMeSection = section}>
                         <AboutMe/>
                     </section>
-                    <section ref={(section) => this.skillsSection = section}>
-                        <Skills/>
-                    </section>
                     <section ref={(section) => this.portfolioSection = section}>
                         <Portfolio/>
+                    </section>
+                    <section ref={(section) => this.skillsSection = section}>
+                        <Skills/>
                     </section>
                     <section ref={(section) => this.resumeSection = section}>
                         <Resume/>

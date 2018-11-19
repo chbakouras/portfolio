@@ -7,7 +7,7 @@
       "technologies": [
         "PHP",
         "Laravel",
-        "Vanilla Javascript",
+        "Javascript",
         "jQuery",
         "PostgreSQL"
       ],
@@ -28,7 +28,7 @@
       "technologies": [
         "PHP",
         "Laravel",
-        "Vanilla Javascript",
+        "Javascript",
         "jQuery",
         "PostgreSQL",
         "ElasticSearch"
@@ -41,6 +41,21 @@
         "/img/projects/web-scraper/source-sites.png",
         "/img/projects/web-scraper/source-site-edit-1.png",
         "/img/projects/web-scraper/source-site-edit-2.png"
+      ]
+    },
+    {
+      "name": "Facebook Bot Building Platform",
+      "description": "A multipurpose panel that helps customers to automate their social business, automate e-commerce, visualize their audience and classify their customers.",
+      "previewImgSrc": "/img/projects/facebook-bot-building/statistics.png",
+      "technologies": [
+        "Angular 5",
+        "NodeJS",
+        "Mongo",
+        "Redis",
+        "Restify"
+      ],
+      "images": [
+        "/img/projects/facebook-bot-building/statistics.png"
       ]
     }
   ]

@@ -20,8 +20,8 @@ class AppMenu extends React.Component {
             <div>
                 <List>
                     <ListItemLink icon={<PermIdentity/>} primary={"About me"} onClick={onAboutMeClick}/>
-                    <ListItemLink icon={<FontAwesomeIcon style={{width: 24}} icon="code"/>} primary={"Skills"} onClick={onSkillsClick}/>
                     <ListItemLink icon={<Web/>} primary={"Portfolio"} onClick={onPortfolioClick}/>
+                    <ListItemLink icon={<FontAwesomeIcon style={{width: 24}} icon="code"/>} primary={"Skills"} onClick={onSkillsClick}/>
                     <ListItemLink icon={<InsertDriveFile/>} primary={"Resume"} onClick={onResumeClick}/>
                     <ListItemLink icon={<Email/>} primary={"Contact"} onClick={onContactClick}/>
                 </List>
