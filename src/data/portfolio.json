@@ -45,7 +45,7 @@
     },
     {
       "name": "Facebook Bot Building Platform",
-      "description": "A multipurpose panel that helps customers to automate their social business, automate e-commerce, visualize their audience and classify their customers.",
+      "description": "A multipurpose panel that helps customers to automate their social business, automate e-commerce, visualize their audience and classify their customers. \n Some of the keystones of the project: \n Broadcast messages / links / flows as messenger private messages to customers. \n Classify customers. \n Automate conversation flow. \n Easy share link as private message. \n Measure total reach. \n Target audience.",
       "previewImgSrc": "/img/projects/facebook-bot-building/statistics.png",
       "technologies": [
         "Angular 5",
@@ -55,7 +55,20 @@
         "Restify"
       ],
       "images": [
-        "/img/projects/facebook-bot-building/statistics.png"
+        "/img/projects/facebook-bot-building/statistics.png",
+        "/img/projects/facebook-bot-building/customers.png",
+        "/img/projects/facebook-bot-building/broadcasts.png",
+        "/img/projects/facebook-bot-building/create-broadcast-1.png",
+        "/img/projects/facebook-bot-building/create-broadcast-2.png",
+        "/img/projects/facebook-bot-building/create-broadcast-3.png",
+        "/img/projects/facebook-bot-building/create-broadcast-4.png",
+        "/img/projects/facebook-bot-building/create-broadcast-5.png",
+        "/img/projects/facebook-bot-building/flows.png",
+        "/img/projects/facebook-bot-building/auto-reply.png",
+        "/img/projects/facebook-bot-building/keywords.png",
+        "/img/projects/facebook-bot-building/persistent-menu.png",
+        "/img/projects/facebook-bot-building/links-statistics-1.png",
+        "/img/projects/facebook-bot-building/links-statistics-2.png"
       ]
     }
   ]
