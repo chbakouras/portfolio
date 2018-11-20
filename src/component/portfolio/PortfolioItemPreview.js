@@ -68,9 +68,9 @@ class PortfolioItemPreview extends React.Component {
 
                             <Typography className={classes.description} variant="body1" gutterBottom>
                                 {NewLineToBr.render(item.description)}
-                                {PortfolioItemPreview.renderLinks(item.links, classes.linkButton)}
                             </Typography>
 
+                            {PortfolioItemPreview.renderLinks(item.links, classes.linkButton)}
                             {PortfolioItemPreview.renderMoreButton(onClickOpen, classes.button, item.images.length, item.moreButtonLink)}
                         </div>
                     </Grid>
@@ -110,7 +110,8 @@ class PortfolioItemPreview extends React.Component {
         if (links && links.length > 0) {
             return (
                 <div>
-                    {links.map(link => <Button  className={className} variant="outlined" href={link.url} target={'_blank'}>{link.text}</Button>)}
+                    {links.map((link, index) => <Button className={className} key={index} variant="outlined"
+                                                        href={link.url} target={'_blank'}>{link.text}</Button>)}
                 </div>
             )
         } else {

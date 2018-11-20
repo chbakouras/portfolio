@@ -8,6 +8,7 @@ import InsertDriveFile from '@material-ui/icons/InsertDriveFile';
 import Email from '@material-ui/icons/Email';
 import ListItemLink from "./ListItemLink";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faCode} from "@fortawesome/free-solid-svg-icons";
 
 const styles = theme => ({});
 
@@ -21,7 +22,7 @@ class AppMenu extends React.Component {
                 <List>
                     <ListItemLink icon={<PermIdentity/>} primary={"About me"} onClick={onAboutMeClick}/>
                     <ListItemLink icon={<Web/>} primary={"Portfolio"} onClick={onPortfolioClick}/>
-                    <ListItemLink icon={<FontAwesomeIcon style={{width: 24}} icon="code"/>} primary={"Skills"} onClick={onSkillsClick}/>
+                    <ListItemLink icon={<FontAwesomeIcon style={{width: 24}} icon={faCode}/>} primary={"Skills"} onClick={onSkillsClick}/>
                     <ListItemLink icon={<InsertDriveFile/>} primary={"Resume"} onClick={onResumeClick}/>
                     <ListItemLink icon={<Email/>} primary={"Contact"} onClick={onContactClick}/>
                 </List>

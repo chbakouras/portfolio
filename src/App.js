@@ -13,19 +13,16 @@ import Contact from "./component/section/Contact";
 import Skills from "./component/section/Skills";
 import Portfolio from "./component/section/Portfolio";
 import Resume from "./component/section/Resume";
-import FontAwesomeIconRegistry from "./service/FontAwesomeIconRegistry";
-
-FontAwesomeIconRegistry.register();
 
 const theme = createMuiTheme({
     typography: {
         useNextVariants: true,
     },
     drawerWidth: 200,
-    primaryColor:  '#ffffff',
+    primaryColor: '#ffffff',
     darkColor: '#005005',
     lightColor: '#60ad5e',
-    primaryTextColor:  '#000000',
+    primaryTextColor: '#000000',
     darkTextColor: '#000000',
     lightTextColor: '#000000',
 });
