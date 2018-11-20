@@ -72,6 +72,36 @@
       ]
     },
     {
+      "name": "Classified Ads",
+      "description": "A portal for Classified Ads & an administration panel to manage customer ads. \n Some of the keystones of the project: \n Create classified ads. \n Socket Messaging. \n Facet based searching. \n Flexible cause of entity attribute value specification design. \n Fast cause of ElasticSearch document indexing.",
+      "previewImgSrc": "/img/projects/classified-ads/customer-home.png",
+      "technologies": [
+        "PHP",
+        "Laravel",
+        "Javascript",
+        "jQuery",
+        "PostgreSQL",
+        "ElasticSearch",
+        "Sockets"
+      ],
+      "images": [
+        "/img/projects/classified-ads/customer-home.png",
+        "/img/projects/classified-ads/listings.png",
+        "/img/projects/classified-ads/listing.png",
+        "/img/projects/classified-ads/my-adverts.png",
+        "/img/projects/classified-ads/create-classified-ad-1.png",
+        "/img/projects/classified-ads/create-classified-ad-2.png",
+        "/img/projects/classified-ads/create-classified-ad-3.png",
+        "/img/projects/classified-ads/create-classified-ad-4.png",
+        "/img/projects/classified-ads/admin-classified-ads.png",
+        "/img/projects/classified-ads/admin-categories.png",
+        "/img/projects/classified-ads/admin-specification.png",
+        "/img/projects/classified-ads/admin-create-specification.png",
+        "/img/projects/classified-ads/admin-locations.png",
+        "/img/projects/classified-ads/admin-images.png"
+      ]
+    },
+    {
       "name": "The Marathon Terra",
       "description": "Company presentation site.",
       "previewImgSrc": "/img/projects/the-marathon-terra/homepage.png",
