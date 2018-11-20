@@ -21,6 +21,9 @@ class Portfolio extends React.Component {
                     <HeaderDivider header={'Solo Projects'}/>
                     {portfolioData.soloItems.map(item => <PortfolioItem item={item} key={item.name}/>)}
 
+                    <HeaderDivider header={'Team Projects'}/>
+                    {portfolioData.teamProjects.map(item => <PortfolioItem item={item} key={item.name}/>)}
+
                 </SectionContent>
             </Section>
         );

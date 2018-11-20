@@ -35,6 +35,10 @@ const styles = theme => ({
     chip: {
         margin: theme.spacing.unit,
     },
+    linkButton: {
+        margin: '15px 5px 5px',
+
+    }
 });
 
 class PortfolioItemPreview extends React.Component {
@@ -64,9 +68,10 @@ class PortfolioItemPreview extends React.Component {
 
                             <Typography className={classes.description} variant="body1" gutterBottom>
                                 {NewLineToBr.render(item.description)}
+                                {PortfolioItemPreview.renderLinks(item.links, classes.linkButton)}
                             </Typography>
 
-                            {PortfolioItemPreview.renderMoreButton(onClickOpen, classes.button)}
+                            {PortfolioItemPreview.renderMoreButton(onClickOpen, classes.button, item.images.length, item.moreButtonLink)}
                         </div>
                     </Grid>
                 </Grid>
@@ -74,15 +79,43 @@ class PortfolioItemPreview extends React.Component {
         );
     }
 
-    static renderMoreButton(onClickOpen, buttonClass) {
-        return onClickOpen
-            ? <Button variant="contained"
-                      color="primary"
-                      className={buttonClass}
-                      onClick={onClickOpen}>
-                More
-            </Button>
-            : "";
+    static renderMoreButton(onClickOpen, buttonClass, imagesLength, moreButtonLink) {
+        if (moreButtonLink) {
+            return (
+                <Button variant="contained"
+                        color="primary"
+                        className={buttonClass}
+                        target={'_blank'}
+                        href={moreButtonLink}>
+                    More
+                </Button>
+            )
+        }
+
+        if (imagesLength > 0) {
+            return onClickOpen
+                ? <Button variant="contained"
+                          color="primary"
+                          className={buttonClass}
+                          onClick={onClickOpen}>
+                    More
+                </Button>
+                : "";
+        } else {
+            return ""
+        }
+    }
+
+    static renderLinks(links, className) {
+        if (links && links.length > 0) {
+            return (
+                <div>
+                    {links.map(link => <Button  className={className} variant="outlined" href={link.url} target={'_blank'}>{link.text}</Button>)}
+                </div>
+            )
+        } else {
+            return "";
+        }
     }
 }
 

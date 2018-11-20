@@ -102,6 +102,18 @@
       ]
     },
     {
+      "name": "N-Answers",
+      "description": "A backend api / administration panel of an Android Quiz game. ",
+      "previewImgSrc": "/img/projects/n-answers/n-answers.png",
+      "technologies": [
+        "PHP",
+        "Laravel",
+        "PostgreSQL"
+      ],
+      "images": [
+      ]
+    },
+    {
       "name": "The Marathon Terra",
       "description": "Company presentation site.",
       "previewImgSrc": "/img/projects/the-marathon-terra/homepage.png",
@@ -113,6 +125,33 @@
       "images": [
         "/img/projects/the-marathon-terra/home.png",
         "/img/projects/the-marathon-terra/products.png"
+      ]
+    }
+  ],
+  "teamProjects": [
+    {
+      "name": "Bakra Bros Projects",
+      "description": "Develop and publish three Android applications ideal for young children. Every game consists by several mini games such as puzzles, random generated labyrinths, even a mini game like Flappy bird.",
+      "previewImgSrc": "/img/projects/bakra-bros/bakra-bros.png",
+      "technologies": [
+        "Android"
+      ],
+      "links": [
+        {
+          "text": "Animals for Kids",
+          "url": "https://play.google.com/store/apps/details?id=com.bakrabros.animalsforkids"
+        },
+        {
+          "text": "Fruits and Vegetables for kids",
+          "url": "https://play.google.com/store/apps/details?id=com.bakrabros.fruitandvegetablesforkids"
+        },
+        {
+          "text": "Vehicles for Kids",
+          "url": "https://play.google.com/store/apps/details?id=com.bakrabros.vehiclesforkids"
+        }
+      ],
+      "moreButtonLink": "https://play.google.com/store/apps/developer?id=Bakra+Bros",
+      "images": [
       ]
     }
   ]
