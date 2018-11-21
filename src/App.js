@@ -7,35 +7,37 @@ import {withStyles} from "@material-ui/core/styles/index";
 import AppLayout from "./component/layout/AppLayout";
 import Profile from "./component/menu/Profile";
 import AppMenu from "./component/menu/AppMenu";
-import AboutMe from "./component/section/AboutMe";
+import About from "./component/section/About";
 import scrollToComponent from 'react-scroll-to-component';
 import Contact from "./component/section/Contact";
 import Skills from "./component/section/Skills";
 import Portfolio from "./component/section/Portfolio";
 import Resume from "./component/section/Resume";
+import blue from '@material-ui/core/colors/blue';
 
 const theme = createMuiTheme({
+    palette: {
+        primary: blue,
+    },
     typography: {
         useNextVariants: true,
     },
     drawerWidth: 200,
-    primaryColor: '#ffffff',
-    darkColor: '#005005',
-    lightColor: '#60ad5e',
-    primaryTextColor: '#000000',
-    darkTextColor: '#000000',
-    lightTextColor: '#000000',
+    sectionHeaderStyle: {
+        backgroundColor: '#ffffff',
+        color: '#000000',
+    }
 });
+
+const scrollConfig = {
+    offset: 0,
+    align: 'top',
+    duration: 400
+};
 
 class App extends Component {
 
     render() {
-        const scrollConfig = {
-            offset: 0,
-            align: 'top',
-            duration: 1500
-        };
-
         const drawerContent =
             <div>
                 <Profile
@@ -55,7 +57,7 @@ class App extends Component {
             <MuiThemeProvider theme={theme}>
                 <AppLayout drawerContent={drawerContent} headerText={''}>
                     <section ref={(section) => this.aboutMeSection = section}>
-                        <AboutMe/>
+                        <About/>
                     </section>
                     <section ref={(section) => this.portfolioSection = section}>
                         <Portfolio/>

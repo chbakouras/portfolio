@@ -8,8 +8,7 @@ const styles = theme => ({
         padding: '6px 30px',
         margin: '10px auto',
         borderRadius: 0,
-        color: theme.primaryTextColor,
-        backgroundColor: theme.primaryColor,
+        ...theme.sectionHeaderStyle
     },
     header: {
         fontSize: '20px',

@@ -9,7 +9,6 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import contactInfo from "../../data/contactInfo";
 import {faEnvelopeSquare} from "@fortawesome/free-solid-svg-icons";
-import Paper from "@material-ui/core/Paper/Paper";
 
 const styles = theme => ({
     root: {
