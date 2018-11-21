@@ -6,6 +6,9 @@ import SectionHeader from "../layout/SectionHeader";
 import Section from "../layout/Section";
 import SectionContent from "../layout/SectionContent";
 import Paper from "@material-ui/core/Paper/Paper";
+import Avatar from "@material-ui/core/es/Avatar/Avatar";
+
+import profileData from "../../data/profile";
 
 const styles = theme => ({
     content: {
@@ -17,25 +20,36 @@ const styles = theme => ({
     bio: {
         textAlign: "justify",
         padding: 15,
+    },
+    avatar: {
+        height: 'auto',
+        width: '100%',
+        maxWidth: 220,
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        marginTop: 20,
+        marginBottom: 0,
+        border: "3px solid white",
+        boxShadow: "rgb(0, 0, 0) 0 0 4px 0",
     }
 });
 
 class About extends React.Component {
 
     render() {
-        const {classes} = this.props;
+        const {classes, theme} = this.props;
         return (
             <Section>
-                <SectionHeader headerText={'About'}/>
+                {/*<SectionHeader headerText={'About'}/>*/}
                 <SectionContent>
                     <Paper className={classes.content}>
+                        <Avatar
+                            alt={`${profileData.firstName} ${profileData.lastName}`}
+                            src={profileData.profileImageSrc}
+                            style={styles(theme).avatar}
+                        />
                         <Typography  variant="body1" gutterBottom className={classes.bio}>
-                            I'm a Software Engineer with strong problem-solving skills.
-                            Specialize in thinking outside the box to find unique solutions
-                            to difficult engineering problems.
-                            Proficient at designing software and writing code in various languages.
-                            Expert in Java.
-                            Enthusiastic team player and deep creative thinker.
+                            {profileData.bio}
                         </Typography>
                     </Paper>
                 </SectionContent>

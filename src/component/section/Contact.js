@@ -7,8 +7,9 @@ import SectionContent from "../layout/SectionContent";
 import Grid from "@material-ui/core/Grid/Grid";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
-import contactInfo from "../../data/contactInfo";
 import {faEnvelopeSquare} from "@fortawesome/free-solid-svg-icons";
+
+import contactInfo from "../../data/contactInfo";
 
 const styles = theme => ({
     root: {

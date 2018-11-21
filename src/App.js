@@ -14,7 +14,7 @@ import Skills from "./component/section/Skills";
 import Portfolio from "./component/section/Portfolio";
 import Resume from "./component/section/Resume";
 import blue from '@material-ui/core/colors/blue';
-import {isWidthDown, isWidthUp} from "@material-ui/core/es/withWidth";
+import {isWidthDown} from "@material-ui/core/es/withWidth";
 
 const theme = createMuiTheme({
     palette: {
