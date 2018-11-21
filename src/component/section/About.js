@@ -9,14 +9,14 @@ import Paper from "@material-ui/core/Paper/Paper";
 
 const styles = theme => ({
     content: {
-        padding: 20,
         maxWidth: 700,
         width: "100%",
-        margin: "40px auto",
+        margin: "20px auto",
         fontSize: "20px",
     },
     bio: {
-        textAlign: "justify"
+        textAlign: "justify",
+        padding: 15,
     }
 });
 

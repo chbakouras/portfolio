@@ -32,7 +32,7 @@ class AppLayout extends React.Component {
             <div className={classes.root}>
                 <MobileAppBar onDrawerToggle={this.handleDrawerToggle}/>
                 <ResponsiveDrawer mobileOpen={this.state.mobileOpen} onDrawerToggle={this.handleDrawerToggle}>
-                    {drawerContent}
+                    {drawerContent(this.handleDrawerToggle)}
                 </ResponsiveDrawer>
                 <AppContent>
                     {children}
@@ -45,7 +45,7 @@ class AppLayout extends React.Component {
 AppLayout.propTypes = {
     classes: PropTypes.object.isRequired,
     theme: PropTypes.object.isRequired,
-    drawerContent: PropTypes.object,
+    drawerContent: PropTypes.func.isRequired,
 };
 
 export default withStyles(styles, {withTheme: true})(AppLayout);

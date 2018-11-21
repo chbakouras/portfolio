@@ -24,7 +24,7 @@ const styles = theme => ({
         textDecoration: "none",
         maxWidth: 250,
         width: "100%",
-        margin: "auto",
+        margin: "0 auto 20px",
         color: "#24292e",
         fontWeight: "bold",
     },

@@ -14,6 +14,7 @@ import Skills from "./component/section/Skills";
 import Portfolio from "./component/section/Portfolio";
 import Resume from "./component/section/Resume";
 import blue from '@material-ui/core/colors/blue';
+import {isWidthDown, isWidthUp} from "@material-ui/core/es/withWidth";
 
 const theme = createMuiTheme({
     palette: {
@@ -29,7 +30,7 @@ const theme = createMuiTheme({
     }
 });
 
-const scrollConfig = {
+const defaultScrollConfig = {
     offset: 0,
     align: 'top',
     duration: 400
@@ -37,8 +38,20 @@ const scrollConfig = {
 
 class App extends Component {
 
+    static scrollToSection(component, onDrawerToggle, width) {
+        let scrollConfig;
+        if (isWidthDown('sm', width)) {
+            onDrawerToggle();
+            scrollConfig = {...defaultScrollConfig, offset: -60};
+        } else {
+            scrollConfig = defaultScrollConfig;
+        }
+
+        scrollToComponent(component, scrollConfig);
+    }
+
     render() {
-        const drawerContent =
+        const drawerContent = onDrawerToggle =>
             <div>
                 <Profile
                     firstName={'Chrysostomos'}
@@ -46,11 +59,11 @@ class App extends Component {
                     profileImageSrc={'/img/chbakouras.jpg'}
                     subheading={'Full stack developer'}/>
                 <AppMenu
-                    onAboutMeClick={() => scrollToComponent(this.aboutMeSection, scrollConfig)}
-                    onSkillsClick={() => scrollToComponent(this.skillsSection, scrollConfig)}
-                    onPortfolioClick={() => scrollToComponent(this.portfolioSection, scrollConfig)}
-                    onResumeClick={() => scrollToComponent(this.resumeSection, scrollConfig)}
-                    onContactClick={() => scrollToComponent(this.contactSection, scrollConfig)}/>
+                    onAboutMeClick={() => App.scrollToSection(this.aboutMeSection, onDrawerToggle, this.props.width)}
+                    onSkillsClick={() => App.scrollToSection(this.skillsSection, onDrawerToggle, this.props.width)}
+                    onPortfolioClick={() => App.scrollToSection(this.portfolioSection, onDrawerToggle, this.props.width)}
+                    onResumeClick={() => App.scrollToSection(this.resumeSection, onDrawerToggle, this.props.width)}
+                    onContactClick={() => App.scrollToSection(this.contactSection, onDrawerToggle, this.props.width)}/>
             </div>;
 
         return (
