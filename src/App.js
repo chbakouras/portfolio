@@ -1,5 +1,6 @@
 import 'typeface-roboto'
 import React, {Component} from 'react';
+import compose from 'recompose/compose';
 import PropTypes from 'prop-types';
 import createMuiTheme from "@material-ui/core/es/styles/createMuiTheme";
 import MuiThemeProvider from "@material-ui/core/es/styles/MuiThemeProvider";
@@ -15,6 +16,9 @@ import Portfolio from "./component/section/Portfolio";
 import Resume from "./component/section/Resume";
 import blue from '@material-ui/core/colors/blue';
 import {isWidthDown} from "@material-ui/core/es/withWidth";
+import withWidth from "@material-ui/core/es/withWidth/withWidth";
+import Hidden from "@material-ui/core/Hidden/Hidden";
+import profileData from "./data/profile";
 
 const theme = createMuiTheme({
     palette: {
@@ -51,19 +55,23 @@ class App extends Component {
     }
 
     render() {
+        const {width} = this.props;
+
         const drawerContent = onDrawerToggle =>
             <div>
-                <Profile
-                    firstName={'Chrysostomos'}
-                    lastName={'Bakouras'}
-                    profileImageSrc={'/img/chbakouras.jpg'}
-                    subheading={'Full stack developer'}/>
+                <Hidden smDown>
+                    <Profile
+                        firstName={profileData.firstName}
+                        lastName={profileData.lastName}
+                        profileImageSrc={profileData.profileImageSrc}
+                        subheading={profileData.subheading}/>
+                </Hidden>
                 <AppMenu
-                    onAboutMeClick={() => App.scrollToSection(this.aboutMeSection, onDrawerToggle, this.props.width)}
-                    onSkillsClick={() => App.scrollToSection(this.skillsSection, onDrawerToggle, this.props.width)}
-                    onPortfolioClick={() => App.scrollToSection(this.portfolioSection, onDrawerToggle, this.props.width)}
-                    onResumeClick={() => App.scrollToSection(this.resumeSection, onDrawerToggle, this.props.width)}
-                    onContactClick={() => App.scrollToSection(this.contactSection, onDrawerToggle, this.props.width)}/>
+                    onAboutMeClick={() => App.scrollToSection(this.aboutMeSection, onDrawerToggle, width)}
+                    onSkillsClick={() => App.scrollToSection(this.skillsSection, onDrawerToggle, width)}
+                    onPortfolioClick={() => App.scrollToSection(this.portfolioSection, onDrawerToggle, width)}
+                    onResumeClick={() => App.scrollToSection(this.resumeSection, onDrawerToggle, width)}
+                    onContactClick={() => App.scrollToSection(this.contactSection, onDrawerToggle, width)}/>
             </div>;
 
         return (
@@ -92,6 +100,7 @@ class App extends Component {
 
 App.propTypes = {
     classes: PropTypes.object.isRequired,
+    width: PropTypes.string.isRequired,
 };
 
-export default withStyles(theme)(App);
+export default compose(withStyles(theme), withWidth())(App);

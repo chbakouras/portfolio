@@ -31,7 +31,7 @@ class Profile extends React.Component {
                     <Avatar
                         alt={`${firstName} ${lastName}`}
                         src={profileImageSrc}
-                        style={styles(theme).avatar}
+                        style={{...styles(theme).avatar}}
                     />
                 </Grid>
                 <Grid item xs={12} className={classes.center}>

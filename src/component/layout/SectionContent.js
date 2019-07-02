@@ -11,9 +11,9 @@ const styles = theme => ({
 class SectionContent extends React.Component {
 
     render() {
-        const {classes, children} = this.props;
+        const {classes, customStyle, children} = this.props;
         return (
-            <div className={classes.sectionContent}>
+            <div className={classes.sectionContent} style={customStyle}>
                 {children}
             </div>
         );
@@ -23,6 +23,7 @@ class SectionContent extends React.Component {
 SectionContent.propTypes = {
     classes: PropTypes.object.isRequired,
     theme: PropTypes.object.isRequired,
+    customStyle: PropTypes.object,
 };
 
 export default withStyles(styles, {withTheme: true})(SectionContent);
