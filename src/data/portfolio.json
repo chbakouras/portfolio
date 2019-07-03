@@ -73,7 +73,7 @@
     },
     {
       "name": "Classified Ads",
-      "description": "A portal for Classified Ads & an administration panel to manage customer ads. \n Some of the keystones of the project: \n Create classified ads. \n Socket Messaging. \n Facet based searching. \n Flexible cause of entity attribute value specification design. \n Fast cause of ElasticSearch document indexing.",
+      "description": "A portal for Classified Ads and an administration panel to manage customer ads. \n Some of the keystones of the project: \n Create classified ads. \n Socket Messaging. \n Facet based searching. \n Flexible cause of entity attribute value specification design. \n Fast cause of ElasticSearch document indexing.",
       "previewImgSrc": "/img/projects/classified-ads/customer-home.png",
       "technologies": [
         "PHP",
@@ -99,6 +99,37 @@
         "/img/projects/classified-ads/admin-create-specification.png",
         "/img/projects/classified-ads/admin-locations.png",
         "/img/projects/classified-ads/admin-images.png"
+      ]
+    },
+    {
+      "name": "The Boosting Lab",
+      "description": "A portal for Game Boosting. This application consist of three panels: Customer, Booster and Admin. \n Some of the keystones of the project: \n Create and manage boosting orders. \n Socket Messaging and Notifications.",
+      "previewImgSrc": "/img/projects/the-boosting-lab/customer-home.png",
+      "technologies": [
+        "PHP",
+        "Laravel",
+        "Javascript",
+        "jQuery",
+        "PostgreSQL",
+        "Redis",
+        "Sockets"
+      ],
+      "images": [
+        "/img/projects/the-boosting-lab/customer-home.png",
+        "/img/projects/the-boosting-lab/new-customer-order.png",
+        "/img/projects/the-boosting-lab/new-order-payment.png",
+        "/img/projects/the-boosting-lab/customer-dashboard.png",
+        "/img/projects/the-boosting-lab/customer-your-boosting.png",
+        "/img/projects/the-boosting-lab/customer-your-boosting-2.png",
+        "/img/projects/the-boosting-lab/customer-wallet.png",
+        "/img/projects/the-boosting-lab/booster-profile.png",
+        "/img/projects/the-boosting-lab/booster-champion-select.png",
+        "/img/projects/the-boosting-lab/booster-order-detail.png",
+        "/img/projects/the-boosting-lab/booster-payments.png",
+        "/img/projects/the-boosting-lab/booster-payment-method.png",
+        "/img/projects/the-boosting-lab/admin-orders.png",
+        "/img/projects/the-boosting-lab/admin-users.png",
+        "/img/projects/the-boosting-lab/admin-create-promotion.png"
       ]
     },
     {
